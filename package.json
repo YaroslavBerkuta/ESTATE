@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.27.7",
+    "css-loader": "^6.7.1",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -37,7 +38,8 @@
     "gulp-webp-html-nosvg": "^1.0.1",
     "gulp-webpcss": "^1.1.1",
     "sass": "^1.45.1",
-    "swiper": "^7.3.4",
+    "style-loader": "^3.3.1",
+    "swiper": "^7.4.1",
     "webp-converter": "^2.2.3",
     "webpack": "^5.65.0",
     "webpack-stream": "^7.0.0"

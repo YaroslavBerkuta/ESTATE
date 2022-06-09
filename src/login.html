@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title": "Login" })
+  <body>
+    @@include('html/header.html')
+    <main class="main">
+      <section class="login">
+        <div class="container">
+          <div class="login__container">
+            <h2>Вхід на сайт</h2>
+            <form action="" class="login__form">
+              <div class="login__input">
+                <label>
+                  <p>Телефон або e-mail</p>
+                  <input type="text" />
+                </label>
+                <label>
+                  <p>Пароль</p>
+                  <input type="password" />
+                </label>
+              </div>
+              <label>
+                <p>Запам’ятати мене</p>
+                <div class="container__cheackbox">
+                  <input type="checkbox" name="" id="" />
+                  <span class="checkmark"></span>
+                </div>
+              </label>
+              <label>
+                <p>Згода на обробку персональних даних</p>
+                <div class="container__cheackbox">
+                  <input type="checkbox" name="" id="" />
+                  <span class="checkmark"></span>
+                </div>
+              </label>
+              <button type="submit" id="" class="btn btn-yelow">УВІЙТИ</button>
+              <button type="submit" id="" class="btn">Зареєструватися</button>
+            </form>
+            <div class="login__account">
+              <a href="">
+                <img src="@img/google.png" alt="">
+                <p>Увійти через Google</p>
+              </a>
+              <a href="">
+                <img src="@img/facebook.png" alt="">
+                <p>Увійти через Facebook</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/footer.html')
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
