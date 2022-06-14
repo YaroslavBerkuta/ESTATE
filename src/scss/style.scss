@@ -827,11 +827,11 @@ body {
   .swiper-button-prev::after {
     content: none;
   }
-  .swiper-button-prev{
+  .swiper-button-prev {
     width: 44px;
     height: 44px;
   }
-  .swiper-button-next{
+  .swiper-button-next {
     width: 44px;
     height: 44px;
   }
@@ -929,7 +929,7 @@ body {
   }
 }
 .post {
-  background: url(@img/postsBg.png) center/cover no-repeat;
+  background: url(@img/postsBg.png) top center/cover no-repeat;
 }
 .post__title {
   max-width: 1040px;
@@ -1156,4 +1156,89 @@ body {
 }
 .last {
   padding-bottom: 65px;
+}
+.about {
+  padding: 120px;
+  background: url(@img/postsBg.png) top center/cover no-repeat;
+}
+.about__item {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 120px;
+  &:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+}
+.about__info {
+  max-width: 444px;
+  h3 {
+    font-size: 36px;
+    line-height: 43px;
+    @include gilroyBold;
+    color: #075f43;
+    margin-bottom: 32px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 126.7%;
+    @include gilroyMedium;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  ul {
+    max-width: 340px;
+    li {
+      font-size: 16px;
+      line-height: 126.7%;
+      @include gilroyMedium;
+      color: #333333;
+
+      position: relative;
+      &:not(:last-child) {
+        margin-bottom: 52px;
+      }
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        background: #dbab00;
+        box-shadow: 0px 4px 8px rgba(163, 129, 11, 0.44);
+        top: 50%;
+        left: -20%;
+        transform: translate(0%, -50%);
+        border-radius: 50%;
+      }
+    }
+  }
+}
+.about__img {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #075f43;
+  padding: 14px;
+  img {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.about__info-question {
+  margin-bottom: 35px;
+  h4 {
+    font-size: 24px;
+    line-height: 29px;
+    @include gilroyBold;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 126.7%;
+    @include gilroyMedium;
+    color: #333333;
+  }
 }
