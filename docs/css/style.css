@@ -411,6 +411,10 @@ body {
 .no-webp .main {
   background: transparent url(../img/main.png) no-repeat; }
 
+.main {
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 1510px;
   padding: 0 12px;
@@ -1736,7 +1740,7 @@ body {
   background: url(../img/postsBg.png) top center/cover no-repeat; }
 
 .about {
-  padding: 120px;
+  padding: 120px 0 40px 0;
 }
 
 .about__item {
@@ -1749,6 +1753,10 @@ body {
 
 .about__item:nth-child(2n) {
   flex-direction: row-reverse;
+}
+
+.about__item:last-child {
+  display: block;
 }
 
 .about__info {
@@ -1831,6 +1839,89 @@ body {
   line-height: 126.7%;
   font-family: "Gilroy-Medium", sans-serif;
   color: #333333;
+}
+
+.about__slider {
+  overflow: visible !important;
+  margin-top: 60px;
+  padding-bottom: 100px !important;
+}
+
+.about__slider-slide {
+  border: 1px solid #075f43;
+  border-radius: 50%;
+  padding: 15px;
+  max-width: 350px;
+}
+
+.about__slider-slide .about__slider-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.about__slider-slide .about__slider-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about__slide-content {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.about__slide-content:hover .about__slider-info {
+  transform: translate(0%, 0%);
+}
+
+.about__slider-info {
+  position: absolute;
+  transform: translate(0%, 120%);
+  transition: all 0.4s linear;
+  top: 0;
+  left: 0;
+  background: rgba(29, 143, 107, 0.6);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about__slider-info h4 {
+  font-size: 24px;
+  line-height: 126.7%;
+  font-family: "Gilroy-Bold", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.about__slider-info p {
+  font-size: 14px;
+  line-height: 126.7%;
+  font-family: "Gilroy-Medium", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  max-width: 250px;
+}
+
+.about__slider-scrollbar {
+  background: #e8e8e8 !important;
+  height: 10px !important;
+  border-radius: 5px !important;
+}
+
+.about__slider-scrollbar .swiper-scrollbar-drag {
+  background: #075f43;
+  box-shadow: 5px 1px 10px rgba(29, 143, 107, 0.6);
+  border-radius: 5px;
 }
 
 .webp .main { background: transparent url(../img/main.webp) no-repeat; }
