@@ -22,6 +22,9 @@ body {
   width: 100%;
   z-index: 999;
 }
+.header__burger{
+  display: none;
+}
 .header__flex {
   display: flex;
   align-items: center;
@@ -350,6 +353,9 @@ body {
 }
 .home__flex {
   margin-top: 60px;
+  .swiper-wrapper{
+    display: block;
+  }
 }
 .home__item {
   background: #ffffff;

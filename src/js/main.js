@@ -29,9 +29,26 @@ const aboutSlide = new Swiper(".about__slider", {
   },
 });
 
-const filterTabs = document.querySelectorAll(".custom__select")
-filterTabs.forEach(item => {
-  item.addEventListener("click", () =>{
+const filterTabs = document.querySelectorAll(".custom__select");
+filterTabs.forEach((item) => {
+  item.addEventListener("click", () => {
     item.querySelector(".variation").classList.toggle("active");
-  })
-})
+  });
+});
+
+if (window.innerWidth < 870) {
+  const headerMenu = document.querySelector(".header__menu");
+  const mobilMenu = document.querySelector(".mobil__menu .container");
+  const headerContact = document.querySelector(".header__contact");
+  const headerWishlist = document.querySelector(".header__user a:first-child");
+  const headerSocial = document.querySelector(".header__social");
+  headerMenu.remove();
+  headerWishlist.remove();
+  headerContact.remove();
+  headerSocial.remove();
+  mobilMenu.append(headerMenu, headerWishlist, headerContact, headerSocial);
+  const mainSlider = new Swiper(".home__flex", {
+    spaceBetween: 20,
+    loop: true,
+  });
+}

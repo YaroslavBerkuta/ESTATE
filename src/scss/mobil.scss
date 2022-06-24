@@ -14,10 +14,156 @@
   .post__charakter {
     max-width: 765px;
   }
-  .post__form{
-    top: 72%;
+  .post__form {
+    top: 80%;
   }
-  .home__item{
+  .home__item {
     padding-right: 45px;
+  }
+  .container__cheackbox {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .hero__filter-form {
+    flex-direction: column;
+  }
+  .custom__select {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .hero {
+    background: url(../img/banner1.png) top center/140% no-repeat;
+    padding: 280px 0 50px 0;
+  }
+  .hero__filter {
+    margin-top: 120px;
+  }
+  .header__flex {
+    justify-content: space-between;
+  }
+  .header__burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    span {
+      background: #eeeeee;
+      border-radius: 2px;
+      display: block;
+      width: 37px;
+      height: 4px;
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .header__menu .menu li a {
+    font-size: 25px;
+  }
+  .mobil__menu {
+    position: fixed;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    transform: translateX(-100%);
+    background: #075f43;
+    padding: 30px 0;
+    border-radius: 0px 0px 20px 20px;
+    z-index: 990;
+    transition: all 0.3s linear;
+  }
+  .header__contact {
+    margin: 0;
+    a {
+      font-size: 24px;
+    }
+  }
+  .header__social {
+    display: block;
+    margin: 30px 0 0 0;
+  }
+  .header__user {
+    margin: 0;
+  }
+  .mobil__menu .btn {
+    margin: 20px 0;
+    border: none;
+    padding: 0;
+    display: block;
+    p {
+      padding: 0;
+      font-size: 25px;
+    }
+    span {
+      display: none;
+    }
+    img {
+      display: none;
+    }
+  }
+  .home__item {
+    flex-direction: column;
+    padding: 0 0 50px 0;
+  }
+  .home__detail {
+    width: 100%;
+  }
+  .home__img {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+  .home__detail {
+    padding: 0 20px;
+  }
+  .instagram__item {
+    max-width: 49%;
+  }
+  .home__flex {
+    overflow: visible !important;
+    .swiper-wrapper {
+      display: flex;
+    }
+  }
+  .home__manager {
+    display: none;
+  }
+  .question__flex:after {
+    content: none;
+  }
+  .question__flex {
+    padding: 43px 0 43px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .benefits__item {
+    max-width: 50%;
+  }
+  .footer__flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__menu h3 {
+    text-align: center;
+  }
+  .footer__menu {
+    margin: 30px 0 0 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .catalog__flex{
+    align-items: center;
+    justify-content: center;
+  }
+  .catalog__flex .last__post-item {
+    max-width: 100%;
+  }
+  .hero__filter{
+    background: transparent;
+    backdrop-filter: none;
   }
 }
