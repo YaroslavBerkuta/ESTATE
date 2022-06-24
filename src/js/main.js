@@ -28,3 +28,10 @@ const aboutSlide = new Swiper(".about__slider", {
     draggable: true,
   },
 });
+
+const filterTabs = document.querySelectorAll(".custom__select")
+filterTabs.forEach(item => {
+  item.addEventListener("click", () =>{
+    item.querySelector(".variation").classList.toggle("active");
+  })
+})

@@ -597,25 +597,9 @@ body {
   color: #626262;
 }
 
-.custom__select .variation {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  left: 0;
-  padding: 35px 5px 15px 20px;
-  background: #eeeeee;
-  border: 1px solid rgba(223, 223, 223, 0.8);
-  border-radius: 10px;
-  max-height: 300px;
-  overflow: auto;
-}
-
-.custom__select .variation::-webkit-scrollbar {
-  display: none;
-}
-
 .custom__select.room .variation {
-  padding: 35px 20px 15px 20px;
+  height: 0px;
+  padding: 0 20px 0 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -642,6 +626,30 @@ body {
   color: #626262;
 }
 
+.custom__select .variation {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  padding: 0 20px 0 20px;
+  background: #eeeeee;
+  border: 1px solid rgba(223, 223, 223, 0.8);
+  border-radius: 10px;
+  max-height: 300px;
+  overflow: auto;
+  transition: all 0.3s linear;
+}
+
+.custom__select .variation::-webkit-scrollbar {
+  display: none;
+}
+
+.custom__select .variation.active {
+  padding: 35px 20px 15px 20px;
+  height: auto;
+}
+
 .hero__filter-form {
   display: flex;
   align-items: center;
@@ -651,7 +659,7 @@ body {
 .container__cheackbox {
   display: inline-block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 25px;
   margin-bottom: 25px;
   cursor: pointer;
   font-size: 22px;
@@ -727,7 +735,7 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 35px 20px 15px 20px;
+  padding: 0 20px 0 20px;
 }
 
 .price .variation .price__select {
@@ -1329,7 +1337,7 @@ body {
 }
 
 .post {
-  padding: 120px;
+  padding: 120px 0;
 }
 
 .post__slide {
@@ -1922,6 +1930,51 @@ body {
   background: #075f43;
   box-shadow: 5px 1px 10px rgba(29, 143, 107, 0.6);
   border-radius: 5px;
+}
+
+.catalog {
+  padding: 80px 0;
+}
+
+.catalog__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.catalog__flex .last__post-item {
+  max-width: 30%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .post__title {
+    max-width: 765px;
+  }
+
+  .post__info {
+    max-width: 765px;
+  }
+
+  .post__description {
+    max-width: 765px;
+  }
+
+  .post__charakter {
+    max-width: 765px;
+  }
+
+  .post__form {
+    top: 72%;
+  }
+
+  .home__item {
+    padding-right: 45px;
+  }
 }
 
 .webp .main { background: transparent url(../img/main.webp) no-repeat; }

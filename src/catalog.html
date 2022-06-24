@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title": "Post" })
+  <body>
+    @@include('html/header.html')
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <h1 class="title">Твоє затишне майбутнє</h1>
+          <div class="hero__filter">
+            <form class="hero__filter-form">
+              <div class="custom__select room">
+                <p>Кількість кімнат</p>
+                <div class="variation">
+                  <label>
+                    <p>1</p>
+                    <div class="container__cheackbox">
+                      <input type="checkbox" name="" id="" />
+                      <span class="checkmark"></span>
+                    </div>
+                  </label>
+                  <label>
+                    <p>2</p>
+                    <div class="container__cheackbox">
+                      <input type="checkbox" name="" id="" checked="checked" />
+                      <span class="checkmark"></span>
+                    </div>
+                  </label>
+                  <label>
+                    <p>3</p>
+                    <div class="container__cheackbox">
+                      <input type="checkbox" name="" id="" />
+                      <span class="checkmark"></span>
+                    </div>
+                  </label>
+                  <label>
+                    <p>4</p>
+                    <div class="container__cheackbox">
+                      <input type="checkbox" name="" id="" />
+                      <span class="checkmark"></span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="custom__select type">
+                <p>тип нерухомості</p>
+                <div class="variation">
+                  <label>
+                    <p>Новобудови на етапі будівництва</p>
+                    <div class="container__cheackbox">
+                      <input type="checkbox" name="" id="" />
+                      <span class="checkmark"></span>
+                    </div>
+                  </label>
+                  <label>
+                    <p>Новобудови з ремонтом</p>
+                    <div class="container__cheackbox">
+                      <input type="checkbox" name="" id="" />
+                      <span class="checkmark"></span>
+                    </div>
+                  </label>
+                  <label>
+                    <p>Здані новобудови</p>
+                    <div class="container__cheackbox">
+                      <input type="checkbox" name="" id="" />
+                      <span class="checkmark"></span>
+                    </div>
+                  </label>
+                  <label>
+                    <p>Вторинний ринок</p>
+                    <div class="container__cheackbox">
+                      <input type="checkbox" name="" id="" />
+                      <span class="checkmark"></span>
+                    </div>
+                  </label>
+                  <label>
+                    <p>Будинок/котедж</p>
+                    <div class="container__cheackbox">
+                      <input type="checkbox" name="" id="" />
+                      <span class="checkmark"></span>
+                    </div>
+                  </label>
+                  <label>
+                    <p>Кімната</p>
+                    <div class="container__cheackbox">
+                      <input type="checkbox" name="" id="" />
+                      <span class="checkmark"></span>
+                    </div>
+                  </label>
+                  <label>
+                    <p>Дворівнева квартира</p>
+                    <div class="container__cheackbox">
+                      <input type="checkbox" name="" id="" />
+                      <span class="checkmark"></span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="custom__select rayon">
+                <p>Район</p>
+                <div class="variation">
+                  <label>
+                    <p>центер</p>
+                    <div class="container__cheackbox">
+                      <input type="checkbox" name="" id="" />
+                      <span class="checkmark"></span>
+                    </div>
+                  </label>
+                  <label>
+                    <p>Виставка</p>
+                    <div class="container__cheackbox">
+                      <input type="checkbox" name="" id="" />
+                      <span class="checkmark"></span>
+                    </div>
+                  </label>
+                  <label>
+                    <p>Пд-західний</p>
+                    <div class="container__cheackbox">
+                      <input type="checkbox" name="" id="" />
+                      <span class="checkmark"></span>
+                    </div>
+                  </label>
+                  <label>
+                    <p>Озерна</p>
+                    <div class="container__cheackbox">
+                      <input type="checkbox" name="" id="" />
+                      <span class="checkmark"></span>
+                    </div>
+                  </label>
+                  <label>
+                    <p>Гречани</p>
+                    <div class="container__cheackbox">
+                      <input type="checkbox" name="" id="" />
+                      <span class="checkmark"></span>
+                    </div>
+                  </label>
+                  <label>
+                    <p>Дубове</p>
+                    <div class="container__cheackbox">
+                      <input type="checkbox" name="" id="" />
+                      <span class="checkmark"></span>
+                    </div>
+                  </label>
+                  <label>
+                    <p>Ракове</p>
+                    <div class="container__cheackbox">
+                      <input type="checkbox" name="" id="" />
+                      <span class="checkmark"></span>
+                    </div>
+                  </label>
+                  <label>
+                    <p>Ружична</p>
+                    <div class="container__cheackbox">
+                      <input type="checkbox" name="" id="" />
+                      <span class="checkmark"></span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="custom__select price">
+                <p>ціна</p>
+                <div class="container__radio">
+                  <div class="variation">
+                    <label>
+                      <p>$</p>
+                      <div class="container__cheackbox">
+                        <input type="radio" name="valut" id="" checked />
+                        <span class="checkmark"></span>
+                      </div>
+                    </label>
+                    <label>
+                      <p>₴</p>
+                      <div class="container__cheackbox">
+                        <input type="radio" name="valut" id="" />
+                        <span class="checkmark"></span>
+                      </div>
+                    </label>
+                    <div class="price__select">
+                      <div class="price__select-item">
+                        <span>від</span>
+                        <input
+                          type="number"
+                          name=""
+                          id=""
+                          max="1000000"
+                          min="0"
+                          step="100"
+                          value="110000"
+                        />
+                      </div>
+                      <div class="price__select-item">
+                        <span>до</span>
+                        <input
+                          type="number"
+                          name=""
+                          id=""
+                          max="1000000"
+                          min="0"
+                          step="100"
+                          value="1000000"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-yelow">пошук</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="catalog" id="">
+        <div class="container">
+          <div class="catalog__flex">
+            <a class="last__post-item" href="#">
+              <div class="last__post-img">
+                <img src="@img/home3.png" alt="" />
+              </div>
+              <div class="last__post-detail">
+                <h3>ЖК Paradise</h3>
+                <p>м. Хмельницький, р‑н. Центр, вул. Староміська</p>
+              </div>
+              <div class="last__post-price">
+                <p>91 010 $</p>
+                <div>
+                  <span>95.8 м²</span>
+                  <span>2 кімнати</span>
+                </div>
+              </div>
+            </a>
+            <a class="last__post-item" href="#">
+              <div class="last__post-img">
+                <img src="@img/home3.png" alt="" />
+              </div>
+              <div class="last__post-detail">
+                <h3>ЖК Paradise</h3>
+                <p>м. Хмельницький, р‑н. Центр, вул. Староміська</p>
+              </div>
+              <div class="last__post-price">
+                <p>91 010 $</p>
+                <div>
+                  <span>95.8 м²</span>
+                  <span>2 кімнати</span>
+                </div>
+              </div>
+            </a>
+            <a class="last__post-item" href="#">
+              <div class="last__post-img">
+                <img src="@img/home3.png" alt="" />
+              </div>
+              <div class="last__post-detail">
+                <h3>ЖК Paradise</h3>
+                <p>м. Хмельницький, р‑н. Центр, вул. Староміська</p>
+              </div>
+              <div class="last__post-price">
+                <p>91 010 $</p>
+                <div>
+                  <span>95.8 м²</span>
+                  <span>2 кімнати</span>
+                </div>
+              </div>
+            </a>
+            <a class="last__post-item" href="#">
+              <div class="last__post-img">
+                <img src="@img/home3.png" alt="" />
+              </div>
+              <div class="last__post-detail">
+                <h3>ЖК Paradise</h3>
+                <p>м. Хмельницький, р‑н. Центр, вул. Староміська</p>
+              </div>
+              <div class="last__post-price">
+                <p>91 010 $</p>
+                <div>
+                  <span>95.8 м²</span>
+                  <span>2 кімнати</span>
+                </div>
+              </div>
+            </a>
+            <a class="last__post-item" href="#">
+              <div class="last__post-img">
+                <img src="@img/home3.png" alt="" />
+              </div>
+              <div class="last__post-detail">
+                <h3>ЖК Paradise</h3>
+                <p>м. Хмельницький, р‑н. Центр, вул. Староміська</p>
+              </div>
+              <div class="last__post-price">
+                <p>91 010 $</p>
+                <div>
+                  <span>95.8 м²</span>
+                  <span>2 кімнати</span>
+                </div>
+              </div>
+            </a>
+            <a class="last__post-item" href="#">
+              <div class="last__post-img">
+                <img src="@img/home3.png" alt="" />
+              </div>
+              <div class="last__post-detail">
+                <h3>ЖК Paradise</h3>
+                <p>м. Хмельницький, р‑н. Центр, вул. Староміська</p>
+              </div>
+              <div class="last__post-price">
+                <p>91 010 $</p>
+                <div>
+                  <span>95.8 м²</span>
+                  <span>2 кімнати</span>
+                </div>
+              </div>
+            </a>
+            <a class="last__post-item" href="#">
+              <div class="last__post-img">
+                <img src="@img/home3.png" alt="" />
+              </div>
+              <div class="last__post-detail">
+                <h3>ЖК Paradise</h3>
+                <p>м. Хмельницький, р‑н. Центр, вул. Староміська</p>
+              </div>
+              <div class="last__post-price">
+                <p>91 010 $</p>
+                <div>
+                  <span>95.8 м²</span>
+                  <span>2 кімнати</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/footer.html')
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
