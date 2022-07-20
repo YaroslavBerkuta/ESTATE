@@ -72,6 +72,9 @@
     border-radius: 0px 0px 20px 20px;
     z-index: 990;
     transition: all 0.3s linear;
+    &.active {
+      transform: translateX(0);
+    }
   }
   .header__contact {
     margin: 0;
@@ -155,15 +158,229 @@
     align-items: center;
     justify-content: center;
   }
-  .catalog__flex{
+  .catalog__flex {
     align-items: center;
     justify-content: center;
   }
   .catalog__flex .last__post-item {
     max-width: 100%;
   }
-  .hero__filter{
+  .hero__filter {
     background: transparent;
     backdrop-filter: none;
+  }
+  .about__item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .about__item:nth-child(2n) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about__info {
+    margin-bottom: 80px;
+    max-width: 100%;
+  }
+  .about__info h3 {
+    text-align: center;
+  }
+  .about {
+    .post__form {
+      display: block;
+      position: inherit;
+      max-width: 100%;
+      margin-top: 80px;
+    }
+  }
+  .post__slider {
+    max-width: 100%;
+  }
+  .post__price {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+  .post__form {
+    position: inherit;
+    max-width: 100%;
+    margin-top: 80px;
+  }
+  .price__cost {
+    margin: 0;
+  }
+  .price__manager .manager__phone {
+    padding-left: 0;
+  }
+  .price__manager .manager__viber {
+    padding-left: 0;
+  }
+  .manager__post {
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .post {
+    background-color: white !important;
+    background: none !important;
+  }
+}
+@media (max-width: 425px) {
+  .container {
+    max-width: 95%;
+  }
+  .btn {
+    padding: 7px 10px;
+  }
+  .header__user {
+    a {
+      p {
+        display: none;
+      }
+    }
+  }
+  .hero {
+    background: url(../img/banner1.png) top center/260% no-repeat;
+    padding: 220px 0 50px 0;
+  }
+  .hero__filter {
+    padding: 0;
+  }
+  .hero__filter-form .btn {
+    max-width: 100%;
+    width: 100%;
+  }
+  .instagram__item {
+    max-width: 100%;
+  }
+  section {
+    padding: 50px 0;
+  }
+  .benefits__item {
+    max-width: 100%;
+  }
+  .price__select-item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .question__flex {
+    padding: 43px 10px 43px 10px;
+  }
+  .question__flex form label {
+    max-width: 100%;
+  }
+  .question__flex form button {
+    max-width: 100%;
+  }
+  .about__info ul li:after {
+    content: none;
+  }
+  .login__input {
+    flex-direction: column;
+  }
+  .login__input label {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .login__form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .login__form > label {
+    max-width: 100%;
+  }
+  .login__form .btn {
+    width: 100%;
+    max-width: 100%;
+  }
+  .login__account {
+    flex-direction: column;
+    a {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+  .post__atribute {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 40px 0 40px 0px;
+    width: 100%;
+    .atribute {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  .info__flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .info__block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid black;
+  }
+  .info__block h4 {
+    margin-right: auto;
+    font-size: 20px;
+  }
+  .info__block:not(:last-child) {
+    border-right: none;
+  }
+  .info__block:not(:last-child) {
+    padding-right: 0px;
+    padding-left: 0;
+  }
+  .info__block span {
+    font-size: 20px;
+  }
+  .post__charakter-text ul {
+    padding-left: 20px;
+  }
+  .post__atribute .atribute {
+    background: #fff;
+  }
+
+  .post__atribute .atribute p {
+    font-size: 22px;
+  }
+  .post__atribute .atribute-yellow {
+    background: #dbab00;
+  }
+  .title {
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 390px) {
+  .post__form form .price__select-item {
+    display: flex;
+  }
+  .custom__select .variation {
+    z-index: 20;
+    position: fixed;
+    top: 110px;
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transform: translateY(-100%);
+  }
+  .custom__select .variation.active {
+    transform: translateY(0);
+  }
+
+  .variation {
+    .btn {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+    }
   }
 }
