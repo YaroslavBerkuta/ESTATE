@@ -66,8 +66,8 @@ burger.addEventListener("click", () => {
   document.querySelector(".mobil__menu").classList.toggle("active");
 });
 
-document.querySelectorAll(".custom__select").forEach((select) => {
+document.querySelectorAll(".form__drop").forEach((select) => {
   select.addEventListener("click", () => {
-    select.querySelector(".variation").classList.toggle("active");
+   select.parentNode.classList.toggle("active")
   });
 });
